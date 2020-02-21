@@ -18,9 +18,7 @@ class NetworkModule {
     fun httpRequest(): OkHttpClient {
         val loggingInterceptor = HttpLoggingInterceptor()
         loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
-        return OkHttpClient.Builder()
-            .addInterceptor(loggingInterceptor)
-            .build()
+        return OkHttpClient.Builder().addInterceptor(loggingInterceptor).build()
     }
 
     @Provides
@@ -28,9 +26,7 @@ class NetworkModule {
     fun retrofitBuild(client: OkHttpClient): Retrofit {
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
-            .baseUrl(BASE_URL)
-            .client(client)
-            .build()
+            .baseUrl(BASE_URL).client(client).build()
     }
 
     @Provides

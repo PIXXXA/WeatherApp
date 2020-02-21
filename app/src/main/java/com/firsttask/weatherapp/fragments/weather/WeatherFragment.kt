@@ -39,11 +39,6 @@ class WeatherFragment : DaggerFragment() {
         viewModel = ViewModelProvider(this, viewModelFactory).get(WeatherViewModel::class.java)
     }
 
-    override fun onAttach(context: Context) {
-        AndroidSupportInjection.inject(this)
-        super.onAttach(context)
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val longitude: String? = arguments?.getString("Longitude")

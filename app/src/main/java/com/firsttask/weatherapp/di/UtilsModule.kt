@@ -18,7 +18,7 @@ class UtilsModule {
 
     @Provides
     @Singleton
-    fun getWeatherRepository(weatherService: WeatherService): WeatherRepository{
+    fun getWeatherRepository(weatherService: WeatherService): WeatherRepository {
         return WeatherRepository(weatherService)
     }
 }
