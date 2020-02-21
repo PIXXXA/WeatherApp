@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+
+    <string name="map">Map</string>
+    <string name="history">History</string>
+    <string name="current_weather">Current Weather</string>
+    <string name="temp_max">Temperature max(F) : </string>
+    <string name="temp_min">Temperature min(F) : </string>
+    <string name="date">Date : </string>
+    <string name="location">Location : </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
